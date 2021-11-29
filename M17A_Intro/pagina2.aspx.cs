@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace M17A_Intro
+{
+    public partial class pagina2 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //parametro da url
+            if (Request.QueryString["valor"] != null)
+            {
+                string valor =Server.UrlDecode(Request.QueryString["valor"].ToString());
+                lbValor.Text = valor;
+
+            }
+        }
+    }
+}
