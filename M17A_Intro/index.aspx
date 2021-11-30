@@ -5,12 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="container">
             <asp:Label ID="Label1" runat="server" Text="Num"></asp:Label>
-            <asp:TextBox ID="tbnum1" runat="server"></asp:TextBox>
+            <asp:TextBox CssClass="form-control" ID="tbnum1" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Num"></asp:Label>
             <asp:TextBox ID="tbNum2" runat="server"></asp:TextBox>
